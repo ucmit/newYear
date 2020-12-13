@@ -1,0 +1,59 @@
+body{
+    background-color:rgb(26, 25, 25);
+}
+/* Анимация снегопада */
+#snow{
+    background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
+    z-index: 1;
+
+    animation: snow 15s linear infinite;
+}
+@keyframes snow{
+    0%{
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    75%{
+        background-position: 500px 750px, 150px 1500px, -175px 150px;
+    }
+    100%{
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+}
+
+/* Музыкальная игрушка */
+#player{
+    position: fixed;
+    left: 85%;
+
+    background-image: url("img/tree_toy.png");
+    background-size: contain;
+    width: 80px;
+    height: 158px;
+}
+#player>img{
+    position: relative;
+    width: 39px;
+
+    left: 18px;
+    top: 97px;
+
+    filter: invert(10%) sepia(94%) saturate(7235%) hue-rotate(251deg) brightness(83%) contrast(116%);
+}
+
+
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+#graz{
+    position: absolute;
+    left: 21%;
+    top: 35%;
+    color: #b0ebeb;
+    font-family: 'Mountains of Christmas';
+    user-select: none;
+}
+#graz>h1{
+    font-size: 140pt;
+}

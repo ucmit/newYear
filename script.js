@@ -12,15 +12,14 @@ $(document).ready(function () {
 $("#tree>img").click(function(e){ 
     music.stop();
     let name = e.target.id;
-    console.log(e)
     if(name == "toy1"){
-        music.play(0);
-    }
-    else if(name == "toy2"){
         music.play(1);
     }
-    else if(name == "toy3"){
+    else if(name == "toy2"){
         music.play(2);
+    }
+    else if(name == "toy3"){
+        music.play(3);
     }
 });
 
@@ -33,7 +32,6 @@ let timer = setInterval(function(){
     let now = new Date();
     // Разность дат
     let diff = newYear - now;
-    console.log(diff)
 
     let days = Math.floor( diff/(24*60*60*1000) );
     let hours = Math.floor( (diff%(24*60*60*1000)) / (60*60*1000) );

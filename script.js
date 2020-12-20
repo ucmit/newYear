@@ -12,7 +12,7 @@ $(document).ready(function () {
 $("#tree>img").click(function(e){ 
     $("#tree>img").removeClass("shaking")
 
-    music.stop();
+    music.pause();
     
     let name = e.target.id;
     if(name == "toy1"){

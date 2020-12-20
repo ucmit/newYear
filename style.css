@@ -37,7 +37,6 @@ body{
     top: 91px;
 
     transform-origin: top;
-    animation: toyShake linear 3s infinite;
 }
 #toy2{
     position: relative;
@@ -46,7 +45,6 @@ body{
     top: 91px;
 
     transform-origin: top;
-    animation: toyShake linear 3s 0.2s infinite;
 }
 #toy3{
     position: relative;
@@ -55,7 +53,10 @@ body{
     top: 91px;
 
     transform-origin: top;
-    animation: toyShake linear 3s 1s infinite;
+}
+
+.shaking{
+    animation: toyShake linear 3s infinite;
 }
 @keyframes toyShake {
     0%{

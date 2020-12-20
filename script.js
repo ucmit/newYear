@@ -10,15 +10,21 @@ $(document).ready(function () {
 });
 // Если нажали на ноту, играет музыка
 $("#tree>img").click(function(e){ 
+    $("#tree>img").removeClass("shaking")
+
     music.stop();
+    
     let name = e.target.id;
     if(name == "toy1"){
+        $(e.target).addClass("shaking");
         music.play(1);
     }
     else if(name == "toy2"){
+        $(e.target).addClass("shaking");
         music.play(2);
     }
     else if(name == "toy3"){
+        $(e.target).addClass("shaking");
         music.play(3);
     }
 });

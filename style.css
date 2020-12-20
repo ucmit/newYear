@@ -35,19 +35,51 @@ body{
     width: 26px;
     left: 46px;
     top: 91px;
+
+    transform-origin: top;
+    animation: toyShake linear 3s infinite;
 }
 #toy2{
     position: relative;
     width: 26px;
     left: 46px;
     top: 91px;
+
+    transform-origin: top;
+    animation: toyShake linear 3s 0.2s infinite;
 }
 #toy3{
     position: relative;
     width: 26px;
     left: 46px;
     top: 91px;
+
+    transform-origin: top;
+    animation: toyShake linear 3s 1s infinite;
 }
+@keyframes toyShake {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(45deg);
+    }
+
+    50%{
+        transform: rotate(0);
+    }
+
+    75%{
+        transform: rotate(-45deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
 
 #countdown{
     position: absolute;

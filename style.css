@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(26, 25, 25);
+    background-color:rgb(138, 107, 92);
 }
 /* Анимация снегопада */
 #snow{
@@ -21,25 +21,52 @@ body{
 }
 
 /* Музыкальная игрушка */
-#player{
+#tree{
     position: fixed;
-    left: 85%;
+    left: calc(50% - 95px);
 
-    background-image: url("img/tree_toy.png");
+    background-image: url("img/tree.png");
     background-size: contain;
-    width: 80px;
-    height: 158px;
+    width: 190px;
+    height: 211px;
 }
-#player>img{
+#toy1{
     position: relative;
-    width: 39px;
-
-    left: 18px;
-    top: 97px;
-
-    filter: invert(10%) sepia(94%) saturate(7235%) hue-rotate(251deg) brightness(83%) contrast(116%);
+    width: 26px;
+    left: 46px;
+    top: 91px;
+}
+#toy2{
+    position: relative;
+    width: 26px;
+    left: 46px;
+    top: 91px;
+}
+#toy3{
+    position: relative;
+    width: 26px;
+    left: 46px;
+    top: 91px;
 }
 
+#countdown{
+    position: absolute;
+    left: 21%;
+    top: 48%;
+    color: #b0ebeb;
+    font-family: 'Squada One', cursive;
+}
+#countdown>p{
+    font-size: 48pt;
+    position: relative;
+    left: 22%;
+}
+#countdown>span{
+    font-size: 72pt;
+    position: relative;
+    left: 39%;
+    top: -67px;
+}
 
 @font-face {
     font-family: 'Mountains of Christmas';
@@ -49,7 +76,7 @@ body{
 #graz{
     position: absolute;
     left: 21%;
-    top: 35%;
+    top: 25%;
     color: #b0ebeb;
     font-family: 'Mountains of Christmas';
     user-select: none;

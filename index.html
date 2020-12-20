@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>С Новым Годом!</title>
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <!-- Подключаемые таблицы -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -11,17 +13,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dedMoroz.css">
 </head>
-<body id="snow">
+<body >
     
     <!-- Ёлочная музыкальная игрушка -->
-    <div id="player">
-        <img src="img/music_note.png">
+    <div id="tree">
+        <img id="toy1" src="./img/tree_toy.png" alt="">
+        <img id="toy2" src="./img/tree_toy_2.png" alt="">
+        <img id="toy3" src="./img/tree_toy_2.png" alt="">
     </div>
 
     <!-- Поздравительная надпись -->
     <div id="graz">
         <h1>Happy New 2021!</h1>
     </div>
+
+    <!-- Таймер и Подарок -->
+    <div id="countdown">
+        <p>До Нового Года осталось</p>
+        <span id="days">00 :</span> 
+        <span id="hours">00 :</span>
+        <span id="minutes">00 :</span>
+        <span id="seconds">00</span> 
+    </div>
+
 
 
     <!-- Дед Мороз/Weihnachtsmann -->

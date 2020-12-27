@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,92 +9,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <!-- Подключаемые таблицы -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Своя таблица -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dedMoroz.css">
     <link rel="stylesheet" href="snowman.css">
     <link rel="stylesheet" href="tree.css">
 </head>
+
 <body>
 
-    <!-- Ёлочная музыкальная игрушка -->
-    <div id="tree">
-        <div id="treeStar" class="glowing">
-            <div></div>
+    <!-- Представление для  компутера -->
+    <div class="d-none d-lg-block">
+        <!-- Ёлочная музыкальная игрушка -->
+        <div id="tree">
+            <div id="treeStar" class="glowing">
+                <div></div>
+            </div>
+            <img id="toy1" src="./img/tree_toy.png" alt="">
+            <img id="toy2" src="./img/tree_toy_2.png" alt="">
+            <img id="toy3" src="./img/tree_toy_2.png" alt="">
         </div>
-        <img id="toy1" src="./img/tree_toy.png" alt="">
-        <img id="toy2" src="./img/tree_toy_2.png" alt="">
-        <img id="toy3" src="./img/tree_toy_2.png" alt="">
-    </div>
 
-    <!-- Поздравительная надпись -->
-    <div id="graz">
-        <h1>Happy New 2021!</h1>
-    </div>
+        <!-- Поздравительная надпись -->
+        <div id="graz">
+            <h1>Happy New 2021!</h1>
+        </div>
 
-    <!-- Таймер и Подарок -->
-    <div id="countdown">
-        <p>До Нового Года осталось</p>
-        <span id="days"></span> 
-        <span id="hours"></span>
-        <span id="minutes"></span>
-        <span id="seconds"></span> 
-    </div>
+        <!-- Таймер и Подарок -->
+        <div id="countdown">
+            <p>До Нового Года осталось</p>
+            <span class="days"></span>
+            <span class="hours"></span>
+            <span class="minutes"></span>
+            <span class="seconds"></span>
+        </div>
 
-    <!-- Дед Мороз/Weihnachtsmann -->
-    <div class="window">
-        <div class="santa">
-            <div class="head">
-                <div class="face">
-                    <div class="redhat">
-                        <div class="whitepart"></div>
-                        <div class="redpart"></div>
-                        <div class="hatball"></div>
+        <!-- Дед Мороз/Weihnachtsmann -->
+        <div class="window">
+            <div class="santa">
+                <div class="head">
+                    <div class="face">
+                        <div class="redhat">
+                            <div class="whitepart"></div>
+                            <div class="redpart"></div>
+                            <div class="hatball"></div>
+                        </div>
+                        <div class="eyes"></div>
+                        <div class="beard">
+                            <div class="nouse"></div>
+                            <div class="mouth"></div>
+                        </div>
                     </div>
-                    <div class="eyes"></div>
-                    <div class="beard">
-                        <div class="nouse"></div>
-                        <div class="mouth"></div>
+                    <div class="ears"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+        </div>
+
+        <!-- Анимированный снеговик -->
+        <div class="snowman">
+            <div class="snowmanFace faceDance">
+                <div class="shadow1">
+                    <div class="eyel"></div>
+                    <div class="eyer"></div>
+                    <div class="nose"></div>
+                    <div class="hat">
+                        <div class="h-top"></div>
                     </div>
                 </div>
-                <div class="ears"></div>
             </div>
-            <div class="body"></div>
+            <div class="snowmanBody">
+                <div class="shadow2"></div>
+                <div class="buttons">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                </div>
+                <div class="hand-l">
+                    <div class="s1"></div>
+                </div>
+                <div class="hand-r">
+                    <div class="s2"></div>
+                </div>
+            </div>
+            <div class="scarf">
+                <div class="sc1"></div>
+                <div class="sc2"></div>
+            </div>
         </div>
     </div>
 
-    <!-- Анимированный снеговик -->
-    <div class="snowman">
-        <div class="snowmanFace faceDance">
-            <div class="shadow1">
-                <div class="eyel"></div>
-                <div class="eyer"></div>
-                <div class="nose"></div>
-                <div class="hat">
-                    <div class="h-top"></div>
-                </div>
-            </div>
+    <!-- Представление для смартфонов -->
+    <div class="d-block d-lg-none">
+        <!-- Поздравительная надпись -->
+        <div id="grazMobile">
+            <h1>Happy New 2021!</h1>
         </div>
-        <div class="snowmanBody">
-            <div class="shadow2"></div>
-            <div class="buttons">
-                <div class="b1"></div>
-                <div class="b2"></div>
-                <div class="b3"></div>
-            </div>
-            <div class="hand-l">
-                <div class="s1"></div>
-            </div>
-            <div class="hand-r">
-                <div class="s2"></div>
-            </div>
+
+        <!-- Таймер и Подарок -->
+        <div id="countdownMobile">
+            <p>Осталось:</p>
+            <span class="days"></span>
+            <span class="hours"></span>
+            <span class="minutes"></span>
+            <span class="seconds"></span>
         </div>
-        <div class="scarf">
-            <div class="sc1"></div>
-            <div class="sc2"></div>
+
+        <!-- Ёлочная музыкальная игрушка -->
+        <div id="treeMobile">
+            <div id="treeStar" class="glowing">
+                <div></div>
+            </div>
+            <img id="toy1" src="./img/tree_toy.png" alt="">
+            <img id="toy2" src="./img/tree_toy_2.png" alt="">
+            <img id="toy3" src="./img/tree_toy_2.png" alt="">
         </div>
+
     </div>
+
+
+
 
     <!-- Подключаемые скрипты -->
     <!-- JQuery -->
@@ -108,8 +144,9 @@
     </script>
     <!-- Для работы с аудиофайлами -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
-    
+
     <!-- Свои скрипты -->
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -64,3 +64,45 @@ body{
 }
 /*===================================*/
 
+
+/* Для смартфона */
+/* Поздравительная надпись */
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+#grazMobile{
+    position: absolute;
+    left: calc(33vw - 10vw);
+    top: 20vh;
+    color: #b0ebeb;
+    font-family: 'Mountains of Christmas';
+    user-select: none;
+}
+#grazMobile>h1{
+    font-size: 10vw;
+}
+/*===================================*/
+
+/* Таймер отсчёта до Нового Года  */
+#countdownMobile{
+    font-family: 'Squada One';
+    position: absolute;
+    left: calc(33vw - 10vw);
+    top: 28vh;
+    color: #b0ebeb;
+}
+#countdownMobile>p{
+    font-size: 5vw;
+    position: relative;
+    left: 10%;
+}
+#countdownMobile>span{
+    font-size: 7vw;
+    position: relative;
+    left: 94%;
+    top: -56px;
+}
+/*===================================*/
+

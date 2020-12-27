@@ -12,11 +12,18 @@
     <!-- Своя таблица -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="dedMoroz.css">
+    <link rel="stylesheet" href="snowman.css">
+    <link rel="stylesheet" href="tree.css">
 </head>
-<body >
+<body>
+
+    
     
     <!-- Ёлочная музыкальная игрушка -->
     <div id="tree">
+        <div id="treeStar" class="glowing">
+            <div></div>
+        </div>
         <img id="toy1" src="./img/tree_toy.png" alt="">
         <img id="toy2" src="./img/tree_toy_2.png" alt="">
         <img id="toy3" src="./img/tree_toy_2.png" alt="">
@@ -30,10 +37,10 @@
     <!-- Таймер и Подарок -->
     <div id="countdown">
         <p>До Нового Года осталось</p>
-        <span id="days">00 :</span> 
-        <span id="hours">00 :</span>
-        <span id="minutes">00 :</span>
-        <span id="seconds">00</span> 
+        <span id="days"></span> 
+        <span id="hours"></span>
+        <span id="minutes"></span>
+        <span id="seconds"></span> 
     </div>
 
     <!-- Дед Мороз/Weihnachtsmann -->
@@ -55,6 +62,38 @@
                 <div class="ears"></div>
             </div>
             <div class="body"></div>
+        </div>
+    </div>
+
+    <!-- Анимированный снеговик -->
+    <div class="snowman">
+        <div class="snowmanFace faceDance">
+            <div class="shadow1">
+                <div class="eyel"></div>
+                <div class="eyer"></div>
+                <div class="nose"></div>
+                <div class="hat hatBounce">
+                    <div class="h-top"></div>
+                </div>
+            </div>
+        </div>
+        <div class="snowmanBody">
+            <div class="shadow2"></div>
+            <div class="buttons">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+            <div class="hand-l">
+                <div class="s1"></div>
+            </div>
+            <div class="hand-r hand-rSwing">
+                <div class="s2"></div>
+            </div>
+        </div>
+        <div class="scarf scarfWobble">
+            <div class="sc1"></div>
+            <div class="sc2"></div>
         </div>
     </div>
 

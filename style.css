@@ -1,6 +1,9 @@
+/* Задний фон страницы */
 body{
     background-color:rgb(138, 107, 92);
 }
+/*===================================*/
+
 /* Анимация снегопада */
 #snow{
     background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
@@ -16,91 +19,12 @@ body{
         background-position: 500px 750px, 150px 1500px, -175px 150px;
     }
     100%{
-        background-position: 0px 0px, 0px 0px, 0px 0px;
+        background-position: 40px 1250px, 150px 1500px, -175px 150px;
     }
 }
+/*===================================*/
 
-/* Музыкальная игрушка */
-#tree{
-    position: fixed;
-    left: calc(50% - 95px);
-
-    background-image: url("img/tree.png");
-    background-size: contain;
-    width: 190px;
-    height: 211px;
-}
-#toy1{
-    position: relative;
-    width: 26px;
-    left: 46px;
-    top: 91px;
-
-    transform-origin: top;
-}
-#toy2{
-    position: relative;
-    width: 26px;
-    left: 46px;
-    top: 91px;
-
-    transform-origin: top;
-}
-#toy3{
-    position: relative;
-    width: 26px;
-    left: 46px;
-    top: 91px;
-
-    transform-origin: top;
-}
-
-.shaking{
-    animation: toyShake linear 3s infinite;
-}
-@keyframes toyShake {
-    0%{
-        transform: rotate(0deg);
-    }
-
-    25%{
-        transform: rotate(45deg);
-    }
-
-    50%{
-        transform: rotate(0);
-    }
-
-    75%{
-        transform: rotate(-45deg);
-    }
-
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-
-
-#countdown{
-    position: absolute;
-    left: 21%;
-    top: 48%;
-    color: #b0ebeb;
-    font-family: 'Squada One', cursive;
-}
-#countdown>p{
-    font-size: 48pt;
-    position: relative;
-    left: 22%;
-}
-#countdown>span{
-    font-size: 72pt;
-    position: relative;
-    left: 39%;
-    top: -67px;
-}
-
+/* Поздравительная надпись */
 @font-face {
     font-family: 'Mountains of Christmas';
     font-style: normal;
@@ -108,12 +32,35 @@ body{
 }
 #graz{
     position: absolute;
-    left: 21%;
-    top: 25%;
+    left: calc(33vw - 10vw);
+    top: 20vh;
     color: #b0ebeb;
     font-family: 'Mountains of Christmas';
     user-select: none;
 }
 #graz>h1{
-    font-size: 140pt;
+    font-size: 10vw;
 }
+/*===================================*/
+
+/* Таймер отсчёта до Нового Года  */
+#countdown{
+    font-family: 'Squada One';
+    position: absolute;
+    left: calc(33vw - 10vw);
+    top: 45vh;
+    color: #b0ebeb;
+}
+#countdown>p{
+    font-size: 5vw;
+    position: relative;
+    left: 10%;
+}
+#countdown>span{
+    font-size: 7vw;
+    position: relative;
+    left: 30%;
+    top: -80px;
+}
+/*===================================*/
+

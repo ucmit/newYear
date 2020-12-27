@@ -171,9 +171,9 @@
 
 /* Положение снеговика */
 .snowman{
-    position: relative;
+    position: absolute;
     left:5px;
-    top:53px;
+    bottom:0px;
 }
 /*===================================*/
 
@@ -182,7 +182,7 @@
     /* Начальный угол наклона */
     transform: rotate(20deg);
 
-    animation: hatBounce 1.5s infinite;
+    animation: hatBounce 1.5s;
 }
 @keyframes hatBounce {
     0%,
@@ -216,7 +216,7 @@
     /* Начальный угол наклона */
     transform: rotate(35deg);
 
-    animation: swingRight 1.5s infinite;
+    animation: swingRight 1.5s;
 }
 @keyframes swingRight {
     20% {
@@ -272,7 +272,7 @@
 /*===================================*/
 
 /* Анимация колебания шарфа */
-.scarfWobble{
+.scarf:hover{
     animation: wobble 0.85s infinite;
 }
 @keyframes wobble {

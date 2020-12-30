@@ -171,9 +171,9 @@
 
 /* Положение снеговика */
 .snowman{
-    position: absolute;
+    position: fixed;
     left:5px;
-    bottom:0px;
+    bottom:30px;
 }
 /*===================================*/
 
@@ -302,3 +302,14 @@
     }
 }
 /*===================================*/
+
+
+/* Для смартфона */
+/* Положение снеговика */
+.snowmanMobile{
+    /* Уменьшение снеговика */
+    transform: scale(0.4);
+    position: absolute;
+    left: 5px;
+    bottom: -73px;
+}

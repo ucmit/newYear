@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="dedMoroz.css">
     <link rel="stylesheet" href="snowman.css">
     <link rel="stylesheet" href="tree.css">
+    <link rel="stylesheet" href="postcard.css">
 </head>
 
 <body>
 
     <!-- Представление для  компутера -->
-    <div class="d-none d-lg-block">
+    <div class="d-none d-lg-inline-block">
         <!-- Ёлочная музыкальная игрушка -->
         <div id="tree">
             <div id="treeStar" class="glowing">
@@ -126,9 +127,83 @@
             <img id="toy3" src="./img/tree_toy_2.png" alt="">
         </div>
 
+        <!-- Анимированный снеговик -->
+        <div class="snowmanMobile">
+            <div class="snowmanFace faceDance">
+                <div class="shadow1">
+                    <div class="eyel"></div>
+                    <div class="eyer"></div>
+                    <div class="nose"></div>
+                    <div class="hat">
+                        <div class="h-top"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="snowmanBody">
+                <div class="shadow2"></div>
+                <div class="buttons">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                </div>
+                <div class="hand-l">
+                    <div class="s1"></div>
+                </div>
+                <div class="hand-r">
+                    <div class="s2"></div>
+                </div>
+            </div>
+            <div class="scarf">
+                <div class="sc1"></div>
+                <div class="sc2"></div>
+            </div>
+        </div>
+
+        <!-- Дед Мороз/Weihnachtsmann -->
+        <div class="windowMobile">
+            <div class="santa">
+                <div class="head">
+                    <div class="face">
+                        <div class="redhat">
+                            <div class="whitepart"></div>
+                            <div class="redpart"></div>
+                            <div class="hatball"></div>
+                        </div>
+                        <div class="eyes"></div>
+                        <div class="beard">
+                            <div class="nouse"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                    <div class="ears"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+        </div>
+
     </div>
 
-
+    <!-- Конверт с поздравлениями -->
+    <div class="envlope-wrapper d-none">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="text caption">Дорогой друг!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+                <div class="text ">Поздравляю с наступившим 2021 Годом!</div>
+            </div>
+            <div class="hearts">
+                <div class="heart heart1"></div>
+                <div class="heart heart2"></div>
+                <div class="heart heart3"></div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Подключаемые скрипты -->
@@ -144,6 +219,7 @@
     </script>
     <!-- Для работы с аудиофайлами -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>
+    
 
     <!-- Свои скрипты -->
     <script src="script.js"></script>

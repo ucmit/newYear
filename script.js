@@ -24,7 +24,8 @@ $("#tree>img").click(function(e){
         $(e.target).addClass("shaking");
         music2.stop();
         music3.stop();
-
+        
+        music1.pause();
         music1.play();
     }
     else if(name == "toy2"){
@@ -32,6 +33,7 @@ $("#tree>img").click(function(e){
         music1.stop();
         music3.stop();
 
+        music2.pause();
         music2.play();
     }
     else if(name == "toy3"){
@@ -39,6 +41,7 @@ $("#tree>img").click(function(e){
         music2.stop();
         music1.stop();
 
+        music3.pause();
         music3.play();
     }
 });

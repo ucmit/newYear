@@ -92,7 +92,7 @@ $("#treeMobile>#treeStar").click(function (e) {
 // Отсчёт до нового года
 setInterval(function(){
     // Время нового года
-    let newYear = new Date("30 December 2020 18:15:00");
+    let newYear = new Date("1 January 2021 00:00:00");
     // Нынешнее время
     let now = new Date();
     // Разность дат
